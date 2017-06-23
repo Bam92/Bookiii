@@ -4,7 +4,7 @@
     "doctrine/dbal": "~2.5",
     "twig/twig": "~1.28"
   },
-  "autolaod": {
+  "autoload": {
     "psr-4": {"Bookiii\\": "src"}
   }
 }
