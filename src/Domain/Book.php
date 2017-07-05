@@ -3,7 +3,7 @@
 namespace Bookiii\Domain;
 
 /**
- * This is a POPO of Book of our app
+ * This is a POPO of Author of our app
  */
 class Book
 {
@@ -40,7 +40,7 @@ class Book
   *
   * @var integer
   */
-  private $authorId;
+  private $author;
 
   public function id ()
 		{
@@ -89,15 +89,11 @@ class Book
 
 		public function author ()
 		{
-			return $this->authorId;
+			return $this->author;
 		}
 
-		public function setAuthorId ($author)
+		public function setAuthor (Author $author)
 		{
-			$this->authorId = $author;
+			$this->author = $author;
 		}
-
-
-
-
 }
