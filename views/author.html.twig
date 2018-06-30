@@ -1,0 +1,17 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+
+<h1>Liste des auteurs</h1>
+{% for author in authors %}
+
+    <article>
+        
+        <h2><a class="bookTitle" href="#">{{
+          author.fName }} {{
+          author.lName }}</a></h2>
+    
+    </article>
+
+{% endfor %}
+{% endblock %}
